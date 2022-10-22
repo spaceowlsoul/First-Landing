@@ -4,11 +4,12 @@ body {
     line-height: 1.5;
     min-height: 100vh;
     max-height: 600vh;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: lightblue;
-    color: whitesmoke;
     min-height: 10vh;
 }
 
@@ -16,6 +17,7 @@ nav {
     max-width: 100%;
     display: flex;
     padding: 4px 16px;
+    margin: auto auto;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +27,21 @@ nav {
 main {
     min-height: 60vh;
     background-color: deepskyblue;
-    color: whitesmoke;
+    color: black;
+}
+
+div > p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+div > a {
+    display: inline-block;
+    border: solid black 1px;
+    border-radius: .25rem;
+    background-color: skyblue;
+    text-decoration: none;
+    padding: .375rem .75rem;
 }
 
 footer {
@@ -34,11 +50,24 @@ footer {
     color: whitesmoke;
 }
 
+#home {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+#home > div {
+    margin: 3rem auto;
+}
+
+#link_logo {
+    border-bottom: none;
+}
+
 a {
-    color: whitesmoke;
+    color: steelblue;
     outline: none;
     padding: 2px 1px 0;
-    text-decoration: none;
 }
 
 a:hover {
@@ -46,6 +75,3 @@ a:hover {
     color: black;
 }
 
-a:hover[id="link_logo"] {
-    border-bottom: none;
-}
