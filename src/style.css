@@ -35,7 +35,7 @@ div > p {
     font-weight: 300;
 }
 
-div > a {
+#home > div > a {
     display: inline-block;
     border: solid black 1px;
     border-radius: .25rem;
@@ -46,6 +46,7 @@ div > a {
 
 footer {
     min-height: 30vh;
+    max-width: 100%;
     background-color: black;
     color: whitesmoke;
 }
@@ -57,9 +58,13 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover{
     border-bottom: 1px solid;
     color: black;
+}
+
+footer a:hover{
+    color: dodgerblue;
 }
 
 #home {
@@ -72,7 +77,8 @@ a:hover {
     margin: 3rem auto;
 }
 
-#link_logo {
+#link_logo,
+#footer_link_logo {
     border-bottom: none;
 }
 
@@ -99,4 +105,14 @@ a:hover {
     width: 100%;
     border-radius: 21px 21px 0 0;
 }
+
+#contact-col1 {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+}
+
 
