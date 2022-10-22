@@ -49,6 +49,10 @@ footer {
     max-width: 100%;
     background-color: black;
     color: whitesmoke;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
 }
 
 a {
@@ -58,13 +62,13 @@ a {
     text-decoration: none;
 }
 
+#contact-col1 a:hover {
+    color: dodgerblue;
+}
+
 a:hover{
     border-bottom: 1px solid;
     color: black;
-}
-
-footer a:hover{
-    color: dodgerblue;
 }
 
 #home {
@@ -106,13 +110,62 @@ footer a:hover{
     border-radius: 21px 21px 0 0;
 }
 
-#contact-col1 {
-    max-width: 100%;
+#contact {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+}
+
+#contact-col1 {
+    display: inline-block;
+    font-size: 1.1rem;
+    max-width: 100%;
+    margin-left: 100px;
+    padding: 5rem;
     height: 30vh;
 }
 
+#contact-col2 {
+    display: inline-block;
+    max-width: 100%;
+    padding: 2.5rem;
+    margin-left: 300px;
+    margin-right: 50px;
+
+}
+
+
+#contact-col2 h5 {
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    color: whitesmoke;
+}
+
+#label[for="email"] {
+    display: block;
+}
+
+#email {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: solid white 1px;
+    border-radius: .25rem;
+}
+
+button {
+    width: 100%;
+    display: inline-block;
+    border: solid white 1px;
+    text-decoration: none;
+    border-radius: .25rem;
+    font-size: 1rem;
+    padding: .375rem .75rem;
+    color: black;
+    background-color: dodgerblue;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+}
 
