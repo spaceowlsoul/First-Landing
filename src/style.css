@@ -1,25 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
-
 body {
-    max-height: 600vh;
-    font-family: 'McLaren', sans-serif;
+    font-family: sans-serif;
+    font-size: 1.5rem;
     line-height: 1.5;
+    min-height: 100vh;
+    max-height: 600vh;
 }
 
 header {
-    min-height: 10vh;
     background-color: lightblue;
-    color: black;
+    color: whitesmoke;
+    min-height: 10vh;
+}
+
+nav {
+    max-width: 100%;
+    display: flex;
+    padding: 4px 16px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
 }
 
 main {
     min-height: 60vh;
     background-color: deepskyblue;
-    color: black;
+    color: whitesmoke;
 }
 
 footer {
     min-height: 30vh;
     background-color: black;
-    color: lightblue;
+    color: whitesmoke;
+}
+
+a {
+    color: whitesmoke;
+    outline: none;
+    padding: 2px 1px 0;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+    color: black;
+}
+
+a:hover[id="link_logo"] {
+    border-bottom: none;
 }
