@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+
+body {
+    max-height: 600vh;
+    font-family: 'McLaren', sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    min-height: 10vh;
+    background-color: lightblue;
+    color: black;
+}
+
+main {
+    min-height: 60vh;
+    background-color: deepskyblue;
+    color: black;
+}
+
+footer {
+    min-height: 30vh;
+    background-color: black;
+    color: lightblue;
+}
